@@ -6,6 +6,10 @@ body {
 }
 
 .container-window {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     display: block;
     position: fixed;
 }
@@ -26,6 +30,8 @@ body {
 }
 
 .close-bar {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     background-color: black;
     width: 100%;
     display: flex;
