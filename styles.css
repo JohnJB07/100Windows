@@ -1,0 +1,49 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+}
+
+.container-window {
+    display: block;
+    position: fixed;
+}
+
+.text-styling h1, .text-styling p {
+    padding: 10px;
+    text-align: center;
+}
+
+.center-middle {
+    display: block;
+    background-color: green;
+    position: fixed;
+    width: 15vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-bar {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-bar button {
+    background-color: black;
+    border: none;
+    color: gray;
+}
+
+.close-bar button:hover {
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.center-middle h1, p {
+    padding: 20px;
+}
