@@ -1,7 +1,5 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     margin: 0;
 }
 
@@ -50,6 +48,82 @@ body {
     color: white;
 }
 
-.center-middle h1, p {
+.center-middle h1, .center-middle p {
     padding: 20px;
+}
+
+/* Finished Window When All Popups are Done */ 
+.finished {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 30px;
+    color: white;
+    background-color: #EF4444;
+    border-radius: 16px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.finished h1, .finished p {
+    margin: 0;
+}
+
+.finished .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.finished .form input, .finished .form button {
+    grid-column: span 6;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.finished .form input {
+    width: 60%;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.finished .form input:focus {
+    outline: none;
+    border: 2px solid #FCA5A5;
+}
+
+.finished .form button {
+    width: 60%;
+    background-color: #FFFFFF;
+    color: #EF4444;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.8s, transform 0.1s;
+}
+
+.finished .form button:hover {
+    background-color: #FEE2E2;
+}
+
+.finished .form button:active {
+    transform: scale(0.95); /* Button slightly shrinks when clicked */
 }
