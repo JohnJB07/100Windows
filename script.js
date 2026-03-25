@@ -80,7 +80,6 @@ function createPopupWindows(NoW) {
             parentContainer.style.left = `${x}%`;
             parentContainer.style.top = `${y}%`;
             parentContainer.style.transform = `translate(-${x}%,-${y}%)`;
-            parentContainer.style.width = "15vw";
 
             // random colors
             parentContainer.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;

@@ -4,12 +4,15 @@ body {
 }
 
 .container-window {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 10px 10px 15px 15px;
     display: block;
     position: fixed;
+
+    width: 15vw;
+    min-width: 250px;
+    max-width: 90vw;
+
+    word-wrap: break-word;
 }
 
 .text-styling h1, .text-styling p {
@@ -59,8 +62,8 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 25vw;
-    min-width: 300px;
+    width: 90%;
+    max-width: 400px;
     flex-direction: column;
     align-items: center;
     text-align: center;
